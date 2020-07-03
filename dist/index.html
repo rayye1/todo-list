@@ -9,14 +9,15 @@
     <div class="heading">
       <h1>To-Do-List</h1>
     </div>
+    <!-- Button and Dropdowns -->
     <div class="extra-container">
         <button id="newProj">New Project</button>
         <button>Delete Project</button>
         <button>New Todo</button>
         <select id="project-filter">
+            <option>All Tasks</option>
             <option>Project 1</option>
             <option>Project 2</option>
-            <option>Project 3</option>
         </select>
         <select id="sort-filter">
             <option>Sort By A-Z</option>
@@ -25,13 +26,16 @@
             <option>Sort By Least Urgent to Most Urgent</option>
         </select>
     </div>
-    <div id="myModal" class="modal">
+    <!-- Proj Modal -->
+    <div id="projModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <input type="text" placeholder="Project Name" name="title" required id="projSub">
+          <button>Submit</button>
         </div>
     </div>
+    <!-- Todo Modal -->
     <!-- Task -->
     <div class="task-container">
       <div class="task">

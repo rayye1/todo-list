@@ -1,25 +1,33 @@
-let modal = document.getElementById("myModal");
+let newProj = document.getElementById("projModal");
+let newProjBtn = document.querySelector('#newProj')
+let closeBtn = document.getElementsByClassName("close")[0];
+let projSub = document.querySelector('.modal-content button')
+let projDrop = document.getElementById("project-filter");
 
-// Get the button that opens the modal
-let btn = document.querySelector('#newProj')
-console.log(btn)
+let projList = [];
 
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+newProjBtn.onclick = function() {
+  newProj.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+closeBtn.onclick = function() {
+  newProj.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-/*window.onclick = function(event) {
-  if (event.target == modal) {
+window.onclick = function(event) {
+  if (event.target == newProj) {
     modal.style.display = "none";
   }
-}*/
+}
+
+projSub.onclick = function () {
+  let projName = document.getElementById('projSub'); //Temp Place Value
+  let option = document.createElement("option");
+  option.text = projName.value;
+  document.getElementById('project-filter').appendChild(option);
+  let copyArr = Array.from(projDrop);
+  projDrop = [...copyArr];
+  //console.log(projDrop[0].textContent) -> A test and it works!
+  projName.value = "";
+  newProj.style.display = "none";
+}
