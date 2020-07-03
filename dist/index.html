@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>To-List</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1>To-Do-List</h1>
+    </div>
+    <div class="extra-container">
+        <button id="newProj">New Project</button>
+        <button>Delete Project</button>
+        <button>New Todo</button>
+        <select id="project-filter">
+            <option>Project 1</option>
+            <option>Project 2</option>
+            <option>Project 3</option>
+        </select>
+        <select id="sort-filter">
+            <option>Sort By A-Z</option>
+            <option>Sort By Z-A</option>
+            <option>Sort By Most Urgent to Least Urgent</option>
+            <option>Sort By Least Urgent to Most Urgent</option>
+        </select>
+    </div>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <!-- Task -->
+    <div class="task-container">
+      <div class="task">
+        <div>
+          <input type="checkbox" id="project" name="scales">
+          <label for="project">Project 1</label>
+        </div>
+        <div> Date: 12/31/2020 </div>
+        <select id="urgency">
+            <option>Very Urgent</option>
+            <option>Urgent</option>
+            <option>Not so Urgent</option>
+        </select>
+        <button>View Info</button>
+        <button>Delete</button>
+      </div>
+      <div class="task">
+        <div>
+          <input type="checkbox" id="project" name="scales">
+          <label for="project">Project 1</label>
+        </div>
+        <div> Date: 12/31/2020 </div>
+        <select id="urgency">
+            <option>Very Urgent</option>
+            <option>Urgent</option>
+            <option>Not so Urgent</option>
+        </select>
+        <button>View Info</button>
+        <button>Delete</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var modal = document.getElementById(\"myModal\"); // Get the button that opens the modal\n\nvar btn = document.querySelector('#newProj');\nconsole.log(btn); // Get the <span> element that closes the modal\n\nvar span = document.getElementsByClassName(\"close\")[0]; // When the user clicks the button, open the modal\n\nbtn.onclick = function () {\n  modal.style.display = \"block\";\n}; // When the user clicks on <span> (x), close the modal\n\n\nspan.onclick = function () {\n  modal.style.display = \"none\";\n}; // When the user clicks anywhere outside of the modal, close it\n\n/*window.onclick = function(event) {\r\n  if (event.target == modal) {\r\n    modal.style.display = \"none\";\r\n  }\r\n}*/\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
